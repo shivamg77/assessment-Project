@@ -1,6 +1,6 @@
 # *Doctor Website*
 
-###### A Doctor website for Doctor's information,Specialties,Insurance Plans.
+###### A Doctor website for Doctor's information,Specialties,Insurance Plans,Doctor Practices.
 
 
 ## TECHNOLOGIES
