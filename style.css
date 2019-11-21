@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: aqua !important;
+}
+a:active {
+  color: blue !important;
+}
+#doctorApp {
+  text-decoration: none;
+  font-size: 27px;
+  color: rgb(211, 135, 22);
+  animation: shivam 1s infinite;
+  margin-left: 0px;
+}
+@keyframes shivam {
+  0% {
+    color: red;
+  }
+  25% {
+    color: #bf55ec;
+  }
+  75% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}
+#home {
+  font-size: 24px;
+  cursor: pointer;
+}
+body {
+  font-family: ProximaNovaReg, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#table {
+  width: 40%;
+  font-size: 20px;
+  background-color: lightgray;
+  text-align: center;
+  display: none;
+  margin-top: 10%;
+  background-size: 100%;
+  border-radius: 15px;
+  border: 2px solid black;
+  text-align: center;
+}
+.name {
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: large;
+  color: darkblue;
+}
+.name:hover {
+  font-size: xx-large;
+  text-decoration: none;
+  color: yellow !important;
+}
+#practicebio {
+  width: 50%;
+  border: 2px solid black;
+  margin-bottom: 5px;
+}
+td,
+th,
+tr {
+  height: 30px;
+  border-bottom: 2px solid black;
+  width: 20%;
+  padding: 10px;
+}
+#heading {
+  width: 320px;
+  color: white;
+  background-color: rgb(35, 35, 251);
+  margin-top: 10%;
+  text-shadow: 2px 3px 5px black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

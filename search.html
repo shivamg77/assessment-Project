@@ -1,0 +1,52 @@
+<html>
+  <body>
+    <form id="Search">
+      <input type="radio" name="Restaurant" value="name" /> Name<br />
+      <input type="radio" name="Restaurant" value="location" /> Location
+      <center>
+        <input
+          type="text"
+          id="searchRest"
+          placeholder="Search Restaurant"
+          style="width: 40%;"
+        />
+        <input type="button" value="Search" onclick="loadDoc()/>
+        <div id="container"></div>
+      </center>
+    </form>
+
+    <script>
+      function loadDoc() {
+        if (str.length == 0) {
+          document.getElementById("container").innerHTML = "";
+          return;
+        } else {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              document.getElementById(
+                "container"
+              ).innerHTML = this.responseText;
+              var obj = JSON.parse(this.responseText);
+              console.log(obj);
+              var res = " ";
+              for (var i = 0; i < 10; i++) {
+                res = res + "<p>" + obj.categories[0].name + "</p>";
+              }
+              document.getElementById("container").innerHTML = res;
+            }
+          };
+          xhttp.open("GET", "https://developers.zomato.com/api/v2.1/search");
+          xhttp.setRequestHeader(
+            "user-key",
+            "f1e2715f4d757bc6b6aaf891d975b1e8"
+          );
+          xhttp.send();
+          xhttp.onload = function() {
+            console.log(xhttp.responseText);
+          };
+        }
+      }
+    </script>
+  </body>
+</html>

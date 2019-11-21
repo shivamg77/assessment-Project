@@ -1,0 +1,53 @@
+<html>
+
+<head>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="f5()" style="background-color: lightgray;">
+	<div>
+		<img src="bg1.jpg" id="bg" style="height: 120%;width:100%;position: fixed;margin-top: -5.7%;z-index: -1;">
+		<div id="header">
+			<nav class="navbar navbar-expand-md navbar-dark bg-secondary fixed-top">
+				<div class="container">
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#home"> <span class="navbar-toggler-icon"></span>
+					</button>
+					<!--MENU-->
+					<a href="index.html" class="nav-item active" id="doctorApp">
+						<h3>Doctor website</h3>
+					</a>&nbsp;&nbsp;
+					<input type="text" id="searchDoc" placeholder="Search Doctor" style="width: 40%;" />
+					<input type="button" style="margin-left:-30px" value="Search" onclick="loadDoc()" />
+					<div class="menu animated slideInDown">
+						<div class="collapse navbar-collapse" id="home">
+							<ul id="bar" class="navbar-nav ml-auto">
+								<li class="nav-item active "><a href="spec.html" class="nav-link ">Specialties</a></li>
+								<li class="nav-item active "><a href="insurance.html " class="nav-link ">Insurance Plan</a></li>
+								<li class="nav-item active "><a href="doctor.html " class="nav-link ">Doctor</a></li>
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<center>
+			<h1 id="heading">Doctors</h1>
+			<div id="practice" style="margin-top:4.4%;"></div>
+		</center>
+	</div>
+	</script>
+	<script src="search4.js"></script>
+	<script src="search.js"></script>
+</body>
+
+</html>
